@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+
+<body>
+    <!-- navbar template -->
+    <nav>
+        <div class="header"> <a href="home.html">Taskify</a> </div>
+        <div class="navbar-text">
+            <a href="login.html" class="logout-txt">
+                Log Out
+                <img src="./home-img/home-logout.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="navbar">
+            <div class="set-navbar">
+                <div class="set-button1"> <img src="./home-img/home-navbar1.png"> </div>
+                <div class="set-button"><a href="calendar.html"><img src="./home-img/home-navbar2.png"> </a></div>
+                <div class="set-button"><a href="tasklist.html"><img src="./home-img/home-navbar3.png"> </a></div>
+                <div class="set-button"><a href="settings.html"><img src="./home-img/home-navbar4.png"> </a></div>
+            </div>
+
+            <div class="set-navbar2">
+                <a href="profile.html"> <img src="./home-img/home-navbar5.png"> </a>
+            </div>
+            
+            
+        </div>
+        <div class="content">
+            <div class="day-cal-week">
+                <div class="left">
+                    <div><span id="current-day"></span>, <span id="current-date"></span></div>
+                    <div class="underline-day"></div>
+                </div>
+                <div class="right">
+                     <h3>Hello,</h3>
+                </div>
+            </div>
+            
+            <!-- <div class="underline-cal-week"></div> -->
+            <div id="calendar"></div>
+            
+            <div class="text-yt">Your Task:<div class="underline-text-yt"></div></div>
+            
+            <div class="tab"> 
+                <button id="openPopup" onclick="togglePopup()"> 
+                  <div>+</div>
+                </button>
+              </div>
+              
+              <div class="popup" id="myPopup">
+                <div class="popup-content">
+                  <div class="v48_5">
+                    <span class="close" onclick="closePopup()">&times;</span> <!-- Added close button -->
+                    
+                    <span class="v48_14">
+                      <input type="text" id="title" required />
+                      <span>Add Title</span>
+                    </span>
+              
+                    <div class="dropdown">
+                      <button onclick="toggleDropdown()" class="dropbtn">Type</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a onclick="selectOption('Task')">Task</a>
+                        <a onclick="selectOption('Exam')">Exam</a>
+                        <a onclick="selectOption('Event')">Event</a>
+                        <a onclick="selectOption('Reminder')">Reminder</a>
+                        <a onclick="selectOption('Birthday')">Birthday</a>
+                      </div>
+                    </div>
+              
+                    <div class="v48_11">
+                      <button id="done" onclick="closePopup()">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="result">
+                <span id="selectedType"></span>
+                <span id="selectedTitle"></span>
+              </div> 
+        </div>
+    </div>
+    
+    <!-- end of navbar template -->
+    <script src="home.js"></script>
+</body>
+</html>

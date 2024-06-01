@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="tasklist.css">
+    <script src="fullcalendar/jquery.min.js"></script>
+    <link rel="stylesheet" href="fullcalendar/dist/fullcalendar.min.css">
+    <script src="fullcalendar/moment.js"></script>
+    <script src="fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="tasklist.js"></script>
+</head>
+
+<body>
+    <!-- navbar template -->
+    <nav>
+        <div class="header"> <a href="home.html">Taskify</a> </div>
+        <div class="navbar-text">
+            <a href="" class="logout-txt">
+                Log Out
+                <img src="./home-img/home-logout.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="navbar">
+            <div class="set-navbar">
+                <div class="set-button"><a href="home.html" > <img src="./home-img/home-navbar1.png"> </a></div>
+                <div class="set-button"><a href="calendar.html" ><img src="./home-img/home-navbar2.png"> </a></div>
+                <div class="set-button1"> <img src="./home-img/home-navbar3.png"> </div>
+                <div class="set-button"><a href="settings.html"> <img src="./home-img/home-navbar4.png"> </a></div>
+            </div>
+
+            <div class="set-navbar2">
+                <a href="profile.html"> <img src="./home-img/home-navbar5.png"> </a>
+            </div>
+            
+            
+        </div>
+        <div class="content">
+            <div class="left">
+                <div id="calender">
+                    <div id="header">
+                        <button id="prevMonth"><img src="tl-Vector-up.png" alt=""></button>
+                        <div class="fix-calendar">
+                            <select id="month"></select>
+                            <select id="year"></select>
+                        </div>
+                        <div class="calendar2" id="calendarTable"></div>
+                        <button id="nextMonth"><img src="tl-Vector-up.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <!-- <div class="date-container">
+                </div> -->
+                <div class="date-container2">
+                    <div class="hari">WED</div>
+                    <div class="tanggal">21</div>
+                </div>
+            </div>
+
+            <div class="result">
+                <span id="selectedType"></span>
+                <span id="selectedTitle"></span>
+              </div> 
+        </div>
+        
+    </div>
+    <script src="tasklist.js"></script>
+    
+    <!-- end of navbar template -->
+</body>
+</html>

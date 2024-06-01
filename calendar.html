@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <script src="fullcalendar/jquery.min.js"></script>
+    <link rel="stylesheet" href="fullcalendar/dist/fullcalendar.min.css">
+    <script src="fullcalendar/moment.js"></script>
+    <script src="fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="calendar.js"></script>
+</head>
+
+<body>
+    <!-- navbar template -->
+    <nav>
+        <div class="header"> <a href="home.html">Taskify</a> </div>
+        <div class="navbar-text">
+            <a href="login.html" class="logout-txt">
+                Log Out
+                <img src="./home-img/home-logout.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="navbar">
+            <div class="set-navbar">
+                <div class="set-button"><a href="home.html" > <img src="./home-img/home-navbar1.png"> </a></div>
+                <div class="set-button1"> <img src="./home-img/home-navbar2.png"> </div>
+                <div class="set-button"><a href="tasklist.html" ><img src="./home-img/home-navbar3.png"> </a></div>
+                <div class="set-button"><a href="settings.html"> <img src="./home-img/home-navbar4.png"> </a></div>
+            </div>
+
+            <div class="set-navbar2">
+                <a href="profile.html"> <img src="./home-img/home-navbar5.png"> </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="calendar">
+                <div id="header">
+                    <button id="prevMonth"><</button>
+                    <select id="month"></select>
+                    <select id="year"></select>
+                    <button id="nextMonth">></button>
+                  </div>
+                  <div id="calendarTable"></div>
+            </div>
+        </div>
+    </div>
+     <script src="calendar.js"></script>
+</body>
+</html>

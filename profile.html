@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <!-- navbar template -->
+    <nav>
+        <div class="header"> <a href="home.html">Taskify</a> </div>
+        <div class="navbar-text">
+            <a href="login.html" class="logout-txt">
+                Log Out
+                <img src="./home-img/home-logout.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="navbar">
+            <div class="set-navbar">
+                <div class="set-button"><a href="home.html" > <img src="./home-img/home-navbar1.png"> </a></div>
+                <div class="set-button"><a href="calendar.html" ><img src="./home-img/home-navbar2.png"> </a></div>
+                <div class="set-button"><a href="tasklist.html"> <img src="./home-img/home-navbar3.png"> </a></div>
+                <div class="set-button"><a href="settings.html"> <img src="./home-img/home-navbar4.png"> </a></div>
+            </div>
+            <div class="set-navbar2">
+                <div class="set-button1"> <img src="./home-img/home-navbar5.png"> </div>
+            </div>
+            
+        <!-- end of navbar template -->    
+        </div>
+        <div class="profile">
+            <h1>Your Account Profile</h1> 
+            <div class="line"></div>
+            <div class="profile-pic-div">
+                <img src="/profile-img/profile-photo.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+              </div>
+              <div class="detail">
+                <h3> Full Name   :</h3>
+                <h3> Date of Birth : </h3>
+                <h3> Phone Number : </h3>
+              </div>
+            </div>
+        </div>    
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

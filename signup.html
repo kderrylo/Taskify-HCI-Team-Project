@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
+  <link href="signup.css" rel="stylesheet" />
+  <title>Sign Up</title>
+</head>
+<body>
+  <!-- navbar template -->
+  <nav>
+    <div class="header"> <a href="home.html">Taskify</a> </div>
+  </nav>
+  <!-- end of navbar template -->
+  <div class="v48_8">
+    <div class="v48_5">
+      <span class="v48_16">Sign Up</span>
+      <span class="v48_20">
+        <input type="text" id="name" required />
+        <span>Full Name</span>
+      </span>
+      <span class="v48_21">
+        <input type="text" id="birth" required />
+        <span>Date of Birth</span>
+        <i id="birth-icon" class="far fa-calendar-alt"></i>
+      </span>
+      <span class="v48_14">
+        <input type="text" id="phoneNumber" required />
+        <span>Phone Number(+62)</span>
+      </span>
+      <span class="v48_15">
+        <input type="text" id="password" required />
+        <span>Password</span>
+      </span>
+      <div class="v48_19">
+        <input type="checkbox" id="agreeCheckbox" required />
+        <label for="agreeCheckbox">
+          I agree to receive a copy of my message via email and understand my personal information will be handled according to Taskify privacy policy
+        </label>
+      </div>
+      <div class="v48_11">
+        <button id="signUpButton">Sign Up</button>
+      </div>
+    </div>
+  </div>  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+  <script src="signup.js"></script>
+</body>
+</html>

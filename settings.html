@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+    <!-- navbar template -->
+    <nav>
+        <div class="header"> <a href="home.html">Taskify</a> </div>
+        <div class="navbar-text">
+            <a href="login.html" class="logout-txt">
+                Log Out
+                <img src="./home-img/home-logout.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="navbar">
+            <div class="set-navbar">
+                <div class="set-button"><a href="home.html" > <img src="./home-img/home-navbar1.png"> </a></div>
+                <div class="set-button"><a href="calendar.html" ><img src="./home-img/home-navbar2.png"> </a></div>
+                <div class="set-button"><a href="tasklist.html"> <img src="./home-img/home-navbar3.png"> </a></div>
+                <div class="set-button1"> <img src="./home-img/home-navbar4.png"> </div>
+            </div>
+
+            <div class="set-navbar2">
+                <a href="profile.html"> <img src="./home-img/home-navbar5.png"> </a>
+            </div>
+            
+            
+        </div>
+        <div class="content">
+                <h1>Settings</h1>
+                <h2>Click the circle to change color</h2>
+            <div class="circle" id="task">
+                <input type="color" class="color-picker">
+                <span>Task</span>
+              </div>
+              <div class="circle" id="examDay">
+                <span>Exam</span>
+                <input type="color" class="color-picker">
+              </div>
+              <div class="circle" id="event">
+                <span>Event</span>
+                <input type="color" class="color-picker">
+              </div>
+              <div class="circle" id="reminder">
+                <span>Reminder</span>
+                <input type="color" class="color-picker">
+              </div>
+              <div class="circle" id="birthday">
+                <span>Birthday</span>
+                <input type="color" class="color-picker">
+            </div>
+            <div class="tog">
+                <h2>WhatsApp Schedule Integration </h2>
+                <div class="toggle">
+                    <input type="checkbox" id="toggle-switch">
+                    <label for="toggle-switch"></label>
+                  </div>
+            </div>
+            <div class="freq">
+                <h2></h2>
+                
+            </div>
+        </div>
+    <!-- end of navbar template -->
+    <script src="settings.js"></script>
+</body>
+</html>
